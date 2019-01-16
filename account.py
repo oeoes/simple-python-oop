@@ -28,7 +28,7 @@ class Account(v.Validation, t.Token):
             self.registered = True
             print("Welcome {}!, your account has been created.".format(self.first_name))
 
-    # login user after registered, by look at registered variable True/False
+    # login user after registered, by look at registered variable value True/False
     def login(self, email, password):
         if self.is_registered() is False:
             print("Your account not registered yet.")
